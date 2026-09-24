@@ -5,7 +5,7 @@
 ### Minecraft Datapack that adds ants with simplistic behavior to your world !
 
 > [!WARNING]
-> This datapack require a resourcepack [link](https://modrinth.com/user/shimik)
+> This datapack require a resourcepack [link](https://modrinth.com/datapack/simple-ant/versions)
 >
 > Current version work for `Minecraft 1.21.11 to 26.3`
 
