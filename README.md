@@ -9,7 +9,7 @@
 >
 > Current version work for `Minecraft 1.21.11 to 26.3`
 
-### Features
+## Features
 
 **This datapack has a config wich you can access it via `/function simpleant:_admin/_set_config`**
 
@@ -47,7 +47,7 @@ Optimization wise, the datapack is pretty perfoment, here a screenshot where I h
 >
 > Every queens have a max amount of Workers and Super Majors, this can be change in the config
 
-### Other Informations
+## Other Informations
 
 > [!NOTE]
 > Because I'm using a Spider as the base for the ant, *spiders no longer have their eyes glow and no longer appear if the spider is invisible*.
