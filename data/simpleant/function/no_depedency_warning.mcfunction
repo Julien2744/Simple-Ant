@@ -1,0 +1,2 @@
+execute at @a run playsound minecraft:entity.shulker.hurt_closed master @p[distance=..2] ~ ~ ~
+tellraw @a [{"bold":true,"color":"dark_red","italic":false,"text":"Problem Detected:"},{"bold":false,"color":"red","text":" A Simple Ant Datapack addon is missing a mod/datapack ! Issues will occur !","underlined":false}]

@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:targeted_entity": {
+      "minecraft:entity_tags": {
+        "any_of": [
+          "simpleant.ant_queen_hitbox"
+        ]
+      },
+      "minecraft:entity_type": "minecraft:spider"
+    }
+  }
+}

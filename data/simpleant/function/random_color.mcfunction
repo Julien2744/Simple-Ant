@@ -1,0 +1,1 @@
+execute store result storage simpleant:global_storage ant_colony_id long 1 run random value 0..16777215

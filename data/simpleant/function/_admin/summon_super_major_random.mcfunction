@@ -1,0 +1,2 @@
+function simpleant:random_color
+function simpleant:_admin/summon_super_major with storage simpleant:global_storage

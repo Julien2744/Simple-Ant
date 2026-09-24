@@ -1,0 +1,1 @@
+$damage @n[tag=simpleant.target,distance=..2] $(attack_damage) mob_attack by @s

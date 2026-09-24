@@ -1,0 +1,1 @@
+$execute on target if entity @s[nbt={data:{ant_colony_id:$(ant_colony_id)}}] run kill @s

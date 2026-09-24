@@ -1,0 +1,70 @@
+# Simple Ant datapack
+
+## Description
+
+### Minecraft Datapack that adds ants with simplistic behavior to your world !
+
+> [!WARNING]
+> This datapack require a resourcepack [link](https://modrinth.com/user/shimik)
+>
+> Current version work for `Minecraft 26.2`
+
+### Features
+
+**This datapack has a config wich you can access it via `/function simpleant:_admin/_set_config`**
+
+**The datapack feature 3 types of ants ! Which have randomized colors !**
+Ants of the same color mean they are from the same colony
+
+- **Worker ant** :
+This ant is responsible to scavenge food and give it to the queen
+[image - worker]
+
+- **Super Major ant** :
+They are the one who's main job is to protect the queen and workers. They only attack when aggro or when they detect a mob that is targeting an ant queen
+[image - worker]
+
+- **Queen ant** :
+The most important ant in the colony
+[image - ant queen]
+
+You can find a starting colony inside an **ant mount**, wich generate frequently around the world
+[image - struct]
+
+### About Optimization
+
+Optimization wise, the datapack is pretty perfoment, here a screenshot where I have a queen with 500 ants without any others mods (note: my system specs if far from the greatest):
+<details>
+<summary>image</summary>
+
+    [image-stresstesting]
+</details>
+
+> [!NOTE]
+> Only 200 workers can be ticked at once, this can be change only by modifying the files
+>
+> Every queens have a max amount of Workers and Super Majors, this can be change in the config
+
+### Other Informations
+
+Because I'm using a Spider as the base for the ant, spiders no longer have their eyes glow and no longer appear if the spider is invisible.
+
+Also because I'm using a Spider as the base for the ant, any mod/datapack that modify the behavior of spiders will affect the ants, except if those allowed me to blacklist the ant from guetting any modification.
+
+<details>
+<summary>List of mods/datapacks where I-ve made the datapack compatible with</summary>
+
+    - Crop & Kettle (workers can pick items from the datapack)
+    - Farmer's Delight Refabricated (workers can pick items from the mods)
+    - Hostile Mobs Improve Over Time
+    - Random Mob Sizes
+</details>
+
+_
+
+<details>
+<summary>List of mods/datapacks that I know cause issues</summary>
+
+    - Mob AI Tweaks (IF gamerule mob-ai-tweaks:crazy_mobs true)
+    - Spiders Produce Webs
+</details>

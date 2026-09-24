@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:vehicle": {
+      "minecraft:entity_tags": {
+        "any_of": [
+          "simpleant.super_major_hitbox"
+        ]
+      }
+    }
+  }
+}

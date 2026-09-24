@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "separation": 2,
+    "spacing": 14,
+    "salt": 1646207470
+  },
+  "structures": [
+    {
+      "structure": "simpleant:ant_mount_structure",
+      "weight": 1
+    }
+  ]
+}

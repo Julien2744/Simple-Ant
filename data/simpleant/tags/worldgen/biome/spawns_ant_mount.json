@@ -1,0 +1,10 @@
+{
+    "values": [
+        "#minecraft:is_jungle",
+        "#minecraft:has_structure/ruined_portal_swamp",
+        "#minecraft:is_forest",
+        "#minecraft:is_savanna",
+        "#minecraft:is_taiga",
+        "#minecraft:has_structure/village_plains"
+    ]
+}
