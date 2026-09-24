@@ -36,7 +36,7 @@ You can find a starting colony inside an **ant mound**, wich generate frequently
 Optimization wise, the datapack is pretty perfoment, here a screenshot where I have a queen with 500 ants without any others mods (note: my system specs are far from the greatest):
 
 <details>
-<summary>image</summary>
+<summary>screenshot</summary>
 
 ![img](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/stress_test.jpg)
 
@@ -49,17 +49,18 @@ Optimization wise, the datapack is pretty perfoment, here a screenshot where I h
 
 ### Other Informations
 
-Because I'm using a Spider as the base for the ant, spiders no longer have their eyes glow and no longer appear if the spider is invisible.
+> [!NOTE]
+> Because I'm using a Spider as the base for the ant, *spiders no longer have their eyes glow and no longer appear if the spider is invisible*.
 
 Also because I'm using a Spider as the base for the ant, any mod/datapack that modify the behavior of spiders will affect the ants, except if those allowed me to blacklist the ant from guetting any modification.
 
-Also because of Spider behavior, the ants pathfing is absolutly horrendous and they tend to be aggresive at night if you get too close to them.
+And also because of Spider behavior, the ants pathfing is absolutly horrendous, and they tend to be aggresive at night if you get too close to them.
 
 <details>
 <summary>List of mods/datapacks where I-ve made the datapack compatible with</summary>
 
     - Crop & Kettle (workers can pick items from the datapack)
-    - Farmer's Delight Refabricated [REQUIRE ADDON] (workers can pick items from the mods)
+    - Farmer's Delight Refabricated [REQUIRE ADDON] (workers can pick items from the mod)
     - Hostile Mobs Improve Over Time
     - Random Mob Sizes
 </details>
