@@ -34,10 +34,12 @@ You can find a starting colony inside an **ant mound**, wich generate frequently
 ### About Optimization
 
 Optimization wise, the datapack is pretty perfoment, here a screenshot where I have a queen with 500 ants without any others mods (note: my system specs if far from the greatest):
+
 <details>
 <summary>image</summary>
 
-    <img src="https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/stress_test.jpg?raw=true">
+![img](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/stress_test.jpg)
+
 </details>
 
 > [!NOTE]
