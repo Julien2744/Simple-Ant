@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "targeted_entity": {
+      "type": "minecraft:bat",
+      "nbt": "{Tags:[\"simpleant.bait\"]}",
+      "distance": {
+        "absolute": {
+          "min": 0,
+          "max": 1.5
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
 > [!WARNING]
 > This datapack require a resourcepack [link](https://modrinth.com/user/shimik)
 >
-> Current version work for `Minecraft 26.2`
+> Current version work for `Minecraft 1.21.11 to 26.3`
 
 ### Features
 
@@ -53,11 +53,13 @@ Because I'm using a Spider as the base for the ant, spiders no longer have their
 
 Also because I'm using a Spider as the base for the ant, any mod/datapack that modify the behavior of spiders will affect the ants, except if those allowed me to blacklist the ant from guetting any modification.
 
+Also because of Spider behavior, the ants pathfing is absolutly horrendous and they tend to be aggresive at night if you get too close to them.
+
 <details>
 <summary>List of mods/datapacks where I-ve made the datapack compatible with</summary>
 
     - Crop & Kettle (workers can pick items from the datapack)
-    - Farmer's Delight Refabricated (workers can pick items from the mods)
+    - Farmer's Delight Refabricated [REQUIRE ADDON] (workers can pick items from the mods)
     - Hostile Mobs Improve Over Time
     - Random Mob Sizes
 </details>

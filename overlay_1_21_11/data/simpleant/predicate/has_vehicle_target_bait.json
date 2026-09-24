@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "vehicle": {
+      "targeted_entity": {
+        "type": "minecraft:bat",
+        "nbt": "{Tags:[\"simpleant.bait\"]}"
+      }
+    }
+  }
+}

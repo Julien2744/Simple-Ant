@@ -1,8 +1,22 @@
 {
   "pack": {
-    "description": "[b1-mc26.1] Datapack that add ants to your world !",
+    "description": "[b1-mc26.2] Datapack that add ants to your world !",
     "pack_format": 107,
-    "min_format": 107,
-    "max_format": 107
+    "min_format": [94,1],
+    "max_format": [121,0]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "min_format": [94,1],
+        "max_format": [101,1],
+        "directory": "overlay_1_21_11"
+      },
+      {
+        "min_format": [121,0],
+        "max_format": [121,0],
+        "directory": "overlay_26_3"
+      }
+    ]
   }
 }

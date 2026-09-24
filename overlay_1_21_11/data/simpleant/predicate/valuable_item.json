@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "contents": {
+        "items": "#simpleant:has_value"
+      }
+    },
+    "flags": {
+      "is_on_fire": false
+    }
+  }
+}
