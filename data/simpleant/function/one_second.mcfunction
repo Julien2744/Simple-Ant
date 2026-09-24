@@ -17,8 +17,8 @@ execute if entity @e[type=bat,tag=simpleant.bait,limit=1] \
 
 # structure marker
 execute if score #simpleant.config simpleant.config.stop_marker_tick matches 0 run \
-    execute at @r if entity @n[type=marker,tag=simpleant.ant_mount_marker,distance=..32] run \
-        execute as @n[type=marker,tag=simpleant.ant_mount_marker,distance=..32] at @s run function simpleant:structures/summon_colony
+    execute at @r if entity @n[type=marker,tag=simpleant.ant_mound_marker,distance=..32] run \
+        execute as @n[type=marker,tag=simpleant.ant_mound_marker,distance=..32] at @s run function simpleant:structures/summon_colony
 
 # keep at end
 schedule function simpleant:one_second 1s

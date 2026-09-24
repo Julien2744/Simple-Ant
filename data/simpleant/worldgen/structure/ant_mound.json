@@ -1,10 +1,10 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#simpleant:spawns_ant_mount",
+  "biomes": "#simpleant:spawns_ant_mound",
   "step": "top_layer_modification",
   "terrain_adaptation": "beard_thin",
   "spawn_overrides": {},
-  "start_pool": "simpleant:ant_mount_pool",
+  "start_pool": "simpleant:ant_mound_pool",
   "size": 1,
   "start_height": {
     "absolute": 0

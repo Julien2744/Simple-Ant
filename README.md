@@ -28,8 +28,8 @@ They are the one who's main job is to protect the queen and workers. They only a
 The most important ant in the colony
 ![image ant queen](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/ant_queen.jpg)
 
-You can find a starting colony inside an **ant mount**, wich generate frequently around the world
-[image ant mount structure]
+You can find a starting colony inside an **ant mound**, wich generate frequently around the world
+![image ant mound](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/ant_mound.jpg)
 
 ### About Optimization
 
@@ -37,7 +37,7 @@ Optimization wise, the datapack is pretty perfoment, here a screenshot where I h
 <details>
 <summary>image</summary>
 
-    ![image-stresstesting](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/stress_test.jpg)
+    <img src="https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/stress_test.jpg?raw=true">
 </details>
 
 > [!NOTE]

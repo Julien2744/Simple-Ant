@@ -7,7 +7,7 @@
   },
   "structures": [
     {
-      "structure": "simpleant:ant_mount_structure",
+      "structure": "simpleant:ant_mound",
       "weight": 1
     }
   ]

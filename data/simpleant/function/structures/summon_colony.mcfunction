@@ -8,4 +8,4 @@ execute as @n[type=spider,tag=simpleant.ant_queen_hitbox,distance=..1] positione
     run function simpleant:_admin/summon_ant with entity @s data
 
 # kill marker
-execute if entity @s[type=marker,tag=simpleant.ant_mount_marker] run kill @s
+execute if entity @s[type=marker,tag=simpleant.ant_mound_marker] run kill @s
