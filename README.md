@@ -2,8 +2,6 @@
 
 ## Description
 
-test commit
-
 ### Minecraft Datapack that adds ants with simplistic behavior to your world !
 
 > [!WARNING]
@@ -20,18 +18,18 @@ Ants of the same color mean they are from the same colony
 
 - **Worker ant** :
 This ant is responsible to scavenge food and give it to the queen
-[image - worker]
+![image worker](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/worker.jpg)
 
 - **Super Major ant** :
 They are the one who's main job is to protect the queen and workers. They only attack when aggro or when they detect a mob that is targeting an ant queen
-[image - worker]
+![image super major](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/super_major.jpg)
 
 - **Queen ant** :
 The most important ant in the colony
-[image - ant queen]
+![image ant queen](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/ant_queen.jpg)
 
 You can find a starting colony inside an **ant mount**, wich generate frequently around the world
-[image - struct]
+[image ant mount structure]
 
 ### About Optimization
 
@@ -39,7 +37,7 @@ Optimization wise, the datapack is pretty perfoment, here a screenshot where I h
 <details>
 <summary>image</summary>
 
-    [image-stresstesting]
+    ![image-stresstesting](https://github.com/Julien2744/Simple-Ant/blob/main/github_asset/stress_test.jpg)
 </details>
 
 > [!NOTE]
