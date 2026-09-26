@@ -11,13 +11,8 @@ execute if entity @s[tag=simpleant.has_bait] run return run function simpleant:a
 
 ### item ###
 execute if score @s simpleant.worker.search_count >= #simpleant.config simpleant.config.worker_search_count \
-    if entity @n[type=item,distance=..12] \
+    if entity @n[type=item,distance=..10] \
         run function simpleant:ants/worker/search/main_search_item
-
-# bait to tagged item
-execute if entity @n[type=item,distance=..12,tag=simpleant.valuable_item] \
-        at @n[type=item,distance=..12,tag=simpleant.valuable_item] \
-            on vehicle run function simpleant:ants/worker/bait_here {baitType:"item"}
 
 # end search
 execute if score @s simpleant.worker.search_count >= #simpleant.config simpleant.config.worker_search_count \

@@ -69,6 +69,7 @@ And also because of Spider behavior, the ants pathfiding are absolutly horrendou
 <summary>List of mods/datapacks where I-ve made the datapack compatible with</summary>
 
     - Crop & Kettle (workers can pick items from the datapack)
+    - Myriad (workers can pick some items from the datapack)
     - Farmer's Delight Refabricated [REQUIRE ADDON] (workers can pick items from the mod)
     - Hostile Mobs Improve Over Time (ants will not affected)
     - Random Mob Sizes (ant wills not be affected)
