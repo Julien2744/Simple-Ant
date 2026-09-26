@@ -1,1 +1,1 @@
-tellraw @s [" ",{"bold":true,"click_event":{"action":"run_command","command":"function simpleant:_admin/_set_config"},"color":"#FFF6E3","text":"←"}]
+tellraw @s [" ",{"bold":true,"click_event":{"action":"run_command","command":"function simpleant:config/menu"},"color":"#FFF6E3","text":"←"}]
