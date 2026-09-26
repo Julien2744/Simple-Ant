@@ -4,7 +4,7 @@ summon spider ~ ~ ~ { \
     Silent:1b, \
     Health:5f, \
     DeathLootTable:"simpleant:empty", \
-    Tags:["simpleant.entity","simpleant.ant","simpleant.ant_hitbox"], \
+    Tags:["simpleant.entity","simpleant.ant","simpleant.ant_hitbox","simpleant.newborn"], \
     CustomName:"Ant", \
     data:{ \
         queen_pos_x:0, queen_pos_y:0, queen_pos_z:0,\
@@ -19,7 +19,7 @@ summon spider ~ ~ ~ { \
     Passengers:[ \
         { \
             id:"minecraft:item_display", \
-            Tags:["simpleant.ant","simpleant.ant_model"], \
+            Tags:["simpleant.ant","simpleant.ant_model","simpleant.newborn"], \
             CustomName:"ant_model", \
             transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.1f,0f],scale:[1f,1f,1f]}, \
             item:{id:"minecraft:brown_dye",count:1,components:{"minecraft:item_model":"simpleant:ant"}}, \
@@ -38,7 +38,7 @@ summon spider ~ ~ ~ { \
 }
 
 # modify ant colony ID
-$data merge entity @n[type=item_display,tag=simpleant.ant_model,distance=..1] {item:{components:{"minecraft:dyed_color": $(ant_colony_id) }}}
-$data modify entity @n[type=spider,tag=simpleant.ant_hitbox,distance=..1] data.ant_colony_id set value $(ant_colony_id)
+$data merge entity @n[type=item_display,tag=simpleant.ant_model,tag=simpleant.newborn,distance=..1] {item:{components:{"minecraft:dyed_color": $(ant_colony_id) }}}
+$data modify entity @n[type=spider,tag=simpleant.ant_hitbox,tag=simpleant.newborn,distance=..1] data.ant_colony_id set value $(ant_colony_id)
 
-execute as @n[type=item_display,tag=simpleant.ant_model,distance=..1] at @s run function simpleant:ants/worker/set_scoreboard
+execute as @n[type=item_display,tag=simpleant.ant_model,tag=simpleant.newborn,distance=..1] at @s run function simpleant:ants/worker/set_scoreboard

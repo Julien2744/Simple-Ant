@@ -4,7 +4,7 @@ summon spider ~ ~ ~ { \
     Silent:1b, \
     Health:20f, \
     DeathLootTable:"simpleant:empty", \
-    Tags:["simpleant.entity","simpleant.ant_queen","simpleant.ant_queen_hitbox"], \
+    Tags:["simpleant.entity","simpleant.ant_queen","simpleant.ant_queen_hitbox","simpleant.newborn"], \
     CustomName:"Ant Queen", \
     data:{\
         home_pos_x:0, home_pos_y:0, home_pos_z:0,\
@@ -17,7 +17,7 @@ summon spider ~ ~ ~ { \
     Passengers:[ \
         { \
             id:"minecraft:item_display", \
-            Tags:["simpleant.ant_queen","simpleant.ant_queen_model"], \
+            Tags:["simpleant.ant_queen","simpleant.ant_queen_model","simpleant.newborn"], \
             CustomName:"ant_queen_model", \
             transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.08,0f],scale:[1f,1f,1f]}, \
             item:{id:"minecraft:brown_dye",count:1,components:{"minecraft:item_model":"simpleant:ant_queen"}} \
@@ -26,11 +26,11 @@ summon spider ~ ~ ~ { \
 }
 
 # modify ant colony ID
-$data merge entity @n[type=item_display,tag=simpleant.ant_queen_model,distance=..1] {item:{components:{"minecraft:dyed_color": $(ant_colony_id) }}}
-$data modify entity @n[type=spider,tag=simpleant.ant_queen_hitbox,distance=..1] data.ant_colony_id set value $(ant_colony_id)
+$data merge entity @n[type=item_display,tag=simpleant.ant_queen_model,tag=simpleant.newborn,distance=..1] {item:{components:{"minecraft:dyed_color": $(ant_colony_id) }}}
+$data modify entity @n[type=spider,tag=simpleant.ant_queen_hitbox,tag=simpleant.newborn,distance=..1] data.ant_colony_id set value $(ant_colony_id)
 
 # random chance to be enchanted
-execute if predicate simpleant:random/1_2048 as @n[type=item_display,tag=simpleant.ant_queen_model,distance=..1] at @s \
+execute if predicate simpleant:random/1_2048 as @n[type=item_display,tag=simpleant.ant_queen_model,tag=simpleant.newborn,distance=..1] at @s \
     run function simpleant:ants/enchant
 
-execute as @n[type=item_display,tag=simpleant.ant_queen_model,distance=..1] at @s run function simpleant:ants/queen/set_scoreboard
+execute as @n[type=item_display,tag=simpleant.ant_queen_model,tag=simpleant.newborn,distance=..1] at @s run function simpleant:ants/queen/set_scoreboard

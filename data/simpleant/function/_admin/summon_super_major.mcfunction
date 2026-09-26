@@ -4,7 +4,7 @@ summon spider ~ ~ ~ { \
     Silent:1b, \
     Health:15f, \
     DeathLootTable:"simpleant:empty", \
-    Tags:["simpleant.entity","simpleant.super_major","simpleant.super_major_hitbox"], \
+    Tags:["simpleant.entity","simpleant.super_major","simpleant.super_major_hitbox","simpleant.newborn"], \
     CustomName:"Super Major", \
     data:{\
         queen_pos_x:0, queen_pos_y:0, queen_pos_z:0,\
@@ -17,7 +17,7 @@ summon spider ~ ~ ~ { \
     Passengers:[ \
         { \
             id:"minecraft:item_display", \
-            Tags:["simpleant.super_major","simpleant.super_major_model"], \
+            Tags:["simpleant.super_major","simpleant.super_major_model","simpleant.newborn"], \
             CustomName:"super_major_model", \
             transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.07,0f],scale:[1f,1f,1f]}, \
             item:{id:"minecraft:brown_dye",count:1,components:{"minecraft:item_model":"simpleant:super_major"}} \
@@ -26,7 +26,7 @@ summon spider ~ ~ ~ { \
 }
 
 # modify ant colony ID
-$data merge entity @n[type=item_display,tag=simpleant.super_major_model,distance=..1] {item:{components:{"minecraft:dyed_color": $(ant_colony_id) }}}
-$data modify entity @n[type=spider,tag=simpleant.super_major_hitbox,distance=..1] data.ant_colony_id set value $(ant_colony_id)
+$data merge entity @n[type=item_display,tag=simpleant.super_major_model,tag=simpleant.newborn,distance=..1 {item:{components:{"minecraft:dyed_color": $(ant_colony_id) }}}
+$data modify entity @n[type=spider,tag=simpleant.super_major_hitbox,tag=simpleant.newborn,distance=..1] data.ant_colony_id set value $(ant_colony_id)
 
-execute as @n[type=item_display,tag=simpleant.super_major_model,distance=..1] at @s run function simpleant:ants/super_major/set_scoreboard
+execute as @n[type=item_display,tag=simpleant.super_major_model,tag=simpleant.newborn,distance=..1] at @s run function simpleant:ants/super_major/set_scoreboard
