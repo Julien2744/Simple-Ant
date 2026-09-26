@@ -8,6 +8,7 @@ execute on vehicle if entity @s[tag=simpleant.cant_target] unless predicate simp
 #https://bugs.mojang.com/browse/MC/issues/MC-305396 && https://bugs.mojang.com/browse/MC/issues/MC-236303
 # attack (cooldown in tick)
 execute on vehicle if predicate simpleant:super_major_has_target_near \
+    unless entity @s[nbt={attributes:[{id:"minecraft:follow_range","modifiers":[{id:"simpleant:passify"}]}]}] \
     if score @s simpleant.attack_cooldown matches 0 run function simpleant:ants/super_major/attack_target with entity @s data
 
 # keep at end
