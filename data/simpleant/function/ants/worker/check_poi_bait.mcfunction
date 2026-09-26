@@ -5,7 +5,7 @@ tag @s remove simpleant.has_bait
 
 # I wish I could use function macro by getting the block name but the "minecraft:" is preventing this
 ## do stuff depending on the bait
-## - block | using block tag
+## - block | using block tag | break_on_pick
 execute if entity @s[tag=simpleant.bait_type.block] \
     on vehicle on target at @s if block ~ ~ ~ #simpleant:break_on_pick run function simpleant:ants/worker/search/drop_block
 execute if entity @s[tag=simpleant.bait_type.block] \

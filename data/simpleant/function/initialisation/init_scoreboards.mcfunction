@@ -54,5 +54,5 @@ execute unless score #simpleant.global simpleant.load_scoreboard matches 1 run s
 execute unless score #simpleant.global simpleant.load_scoreboard matches 1 run schedule function simpleant:one_minute 60s
 execute unless score #simpleant.global simpleant.load_scoreboard matches 1 run schedule function simpleant:ten_minute 600s
 
-# mark initialisation has done
+# mark initialisation as done
 scoreboard players set #simpleant.global simpleant.load_scoreboard 1
