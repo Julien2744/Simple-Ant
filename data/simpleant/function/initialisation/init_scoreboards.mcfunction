@@ -36,7 +36,7 @@ scoreboard objectives add simpleant.exist dummy
 # - config
 scoreboard players set #simpleant.config simpleant.config.show_bait_location 0
 scoreboard players set #simpleant.config simpleant.config.stop_marker_tick 0
-scoreboard players set #simpleant.config simpleant.config.bait_exist_duration 120
+scoreboard players set #simpleant.config simpleant.config.bait_exist_duration 30
 scoreboard players set #simpleant.config simpleant.config.max_worker 16
 scoreboard players set #simpleant.config simpleant.config.max_super_major 8
 scoreboard players set #simpleant.config simpleant.config.worker_cost 2
