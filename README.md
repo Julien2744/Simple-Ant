@@ -66,7 +66,7 @@ Also because I'm using a Spider as the base for the ant, **any mod/datapack that
 And also because of Spider behavior, the ants pathfiding are absolutly horrendous, and they tend to be aggresive at night if you get too close to them.
 
 <details>
-<summary>List of mods/datapacks where I-ve made the datapack compatible with</summary>
+<summary>List of mods/datapacks where I've made the datapack compatible with</summary>
 
     - Crop & Kettle (workers can pick items from the datapack)
     - Myriad (workers can pick some items from the datapack)

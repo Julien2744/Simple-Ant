@@ -7,9 +7,8 @@
 ### Minecraft Datapack that adds ants with simplistic behavior to your world !
 
 > WARNING
-> This datapack require a resourcepack
 >
-> Current version work for `Minecraft 1.21.11 to 26.3`
+> This datapack require a resourcepack
 
 ## Features
 
@@ -54,6 +53,7 @@ Optimization wise, the datapack is pretty perfoment, here a screenshot where I h
 </details>
 
 > NOTE
+>
 > Only 200 workers can be ticked at once, this can only be change by modifying the files
 >
 > Every queens have a max amount of Workers and Super Majors, this can be change in the config
@@ -61,6 +61,7 @@ Optimization wise, the datapack is pretty perfoment, here a screenshot where I h
 ## Other Informations
 
 > NOTE
+>
 > Because I'm using a Spider as the base for the ant, *spiders no longer have their eyes glow and no longer appear when the spider is invisible*.
 
 Also because I'm using a Spider as the base for the ant, **any mod/datapack that modify the behavior of spiders will affect the ants**, except if those allowed me to blacklist the ant from guetting any modification.
@@ -68,7 +69,7 @@ Also because I'm using a Spider as the base for the ant, **any mod/datapack that
 And also because of Spider behavior, the ants pathfiding are absolutly horrendous, and they tend to be aggresive at night if you get too close to them.
 
 <details>
-<summary>List of mods/datapacks where I-ve made the datapack compatible with</summary>
+<summary>List of datapacks where I've made the datapack compatible with</summary>
 
     - Crop & Kettle (workers can pick items from the datapack)
     - Hostile Mobs Improve Over Time (ants will not affected)
@@ -78,8 +79,7 @@ And also because of Spider behavior, the ants pathfiding are absolutly horrendou
 _
 
 <details>
-<summary>List of mods/datapacks that I know cause issues</summary>
+<summary>List of datapacks that I know cause issues</summary>
 
-    - Mob AI Tweaks (IF gamerule mob-ai-tweaks:crazy_mobs true)
-    - Spiders Produce Webs
+    Currently none
 </details>
