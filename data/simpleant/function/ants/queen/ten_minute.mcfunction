@@ -34,8 +34,9 @@ execute if score @s simpleant.queen.worker_count >= #simpleant.config simpleant.
 # check if queen is stuck because of terrible spider pathfinding
 execute on vehicle unless block ~ ~1 ~ #air run function simpleant:ants/queen/check_if_stuck with entity @s data
 
+# starve if no nutrition
+execute if score @s simpleant.queen.nutrition matches ..0 on vehicle run damage @s 1 minecraft:starve
+
 # regulary consume nutrition
 execute unless score @s simpleant.queen.nutrition matches ..0 \ 
     run scoreboard players remove @s simpleant.queen.nutrition 1
-# starve if no nutrition
-execute if score @s simpleant.queen.nutrition matches ..0 on vehicle run damage @s 1 minecraft:starve
