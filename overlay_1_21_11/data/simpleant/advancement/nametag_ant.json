@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "simpleant.nametag_ant": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:name_tag"
+        },
+        "entity": {
+          "type": "minecraft:spider",
+          "nbt": {
+            "Tags": [
+              "simpleant.entity"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "simpleant:ants/name_tag_trigger"
+  },
+  "sends_telemetry_event": false
+}

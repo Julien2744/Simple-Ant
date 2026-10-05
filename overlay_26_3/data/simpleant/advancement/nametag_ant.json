@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "simpleant.nametag_ant": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:name_tag"
+        },
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:spider",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "simpleant.ant",
+                "simpleant.super_major",
+                "simpleant.ant_queen"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "simpleant:ants/name_tag_trigger"
+  },
+  "sends_telemetry_event": false
+}
