@@ -1,5 +1,5 @@
 ## ------ Simple ants Datapack ------ ##
-# Minecraft version: 26.2
+# Minecraft version: 26.1.3
 # datapack version: beta-2
 # resourcepack version: v1.1
 # 

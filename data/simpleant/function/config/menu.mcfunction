@@ -4,7 +4,7 @@
 function simpleant:config/filler
 
 # title
-tellraw @s [{"bold":true,"color":"#765143","text":"🐜"},{"bold":true,"color":"#765143","text":" Simple Ant config"},{"bold":false,"color":"gray","text":" beta-2"},{"bold":true,"color":"#765143","text":" 🐜"}]
+tellraw @s [{"bold":true,"color":"#765143","text":"🐜"},{"bold":true,"color":"#765143","text":" Simple Ant config"},{"bold":false,"color":"gray","text":" beta-1.3"},{"bold":true,"color":"#765143","text":" 🐜"}]
 tellraw @s [{"text":" "}]
 
 # links
