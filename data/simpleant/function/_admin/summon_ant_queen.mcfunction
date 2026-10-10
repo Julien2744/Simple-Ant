@@ -13,7 +13,15 @@ summon spider ~ ~ ~ { \
         attack_damage:2.0f\
     }, \
     active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}], \
-    attributes:[{id:"minecraft:scale",base:0.75},{id:"minecraft:follow_range",base:8},{id:"minecraft:attack_damage",base:2.0f},{id:"minecraft:max_health",base:20},{id:"movement_speed",base:0.275f}], \
+    attributes:[\
+        {id:"minecraft:scale",base:0.75},\
+        {id:"minecraft:follow_range",base:8},\
+        {id:"minecraft:attack_damage",base:2.0f},\
+        {id:"minecraft:safe_fall_distance",base:8.0f},\
+        {id:"minecraft:fall_damage_multiplier",base:0.5f},\
+        {id:"minecraft:max_health",base:20},\
+        {id:"movement_speed",base:0.275f}\
+    ], \
     Passengers:[ \
         { \
             id:"minecraft:item_display", \
