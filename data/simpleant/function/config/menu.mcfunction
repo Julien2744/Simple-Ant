@@ -8,9 +8,9 @@ tellraw @s [{"bold":true,"color":"#765143","text":"🐜"},{"bold":true,"color":"
 tellraw @s [{"text":" "}]
 
 # links
-tellraw @s ["   ",{"shadow_color":-16752658,"text":"Links :"},"     ",{"click_event":{"action":"open_url","url":"https://smithed.net/packs/simpleant"},"shadow_color":-14989116,"text":"[smithed]"},"   ",{"click_event":{"action":"open_url","url":"https://modrinth.com/datapack/simple-ant"},"shadow_color":-16732324,"text":"[modrinth]"},"   ",{"click_event":{"action":"open_url","url":"https://www.curseforge.com/minecraft/mc-mods/simple-ant"},"shadow_color":-1351125,"text":"[curseforge]"}]
+#tellraw @s ["   ",{"shadow_color":-16752658,"text":"Links :"},"     ",{"click_event":{"action":"open_url","url":"https://smithed.net/packs/simpleant"},"shadow_color":-14989116,"text":"[smithed]"},"   ",{"click_event":{"action":"open_url","url":"https://modrinth.com/datapack/simple-ant"},"shadow_color":-16732324,"text":"[modrinth]"},"   ",{"click_event":{"action":"open_url","url":"https://www.curseforge.com/minecraft/mc-mods/simple-ant"},"shadow_color":-1351125,"text":"[curseforge]"}]
 #tellraw @s ["   ",{"color":"#005FEE","text":"Links :"},"     ",{"click_event":{"action":"open_url","url":"https://smithed.net/packs"},"color":"#1b48c4","text":"[smithed]"},"   ",{"click_event":{"action":"open_url","url":"https://modrinth.com/datapack/simple-ant"},"color":"#00AF5C","text":"[modrinth]"},"   ",{"click_event":{"action":"open_url","url":"https://www.curseforge.com/minecraft/mc-mods/the-ice-warrior"},"color":"#eb622b","text":"[curseforge]"}]
-tellraw @s [{"text":" "}]
+#tellraw @s [{"text":" "}]
 
 # global
 tellraw @s [{"color":"dark_gray","text":"   - "},{"color":"gray","text":"🛠 "},{"click_event":{"action":"run_command","command":"function simpleant:config/global/menu"},"color":"#005FEE","hover_event":{"action":"show_text","value":[{"text":"Global config of the datapack"}]},"text":"Global"}]
