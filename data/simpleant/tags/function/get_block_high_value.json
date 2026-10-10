@@ -2,6 +2,9 @@
     "values": [
         "simpleant:ants/worker/search/get_block/high_value/honey_block",
         "simpleant:ants/worker/search/get_block/high_value/honeycomb_block",
-        "simpleant:ants/worker/search/get_block/high_value/cake"
+        "simpleant:ants/worker/search/get_block/high_value/cake",
+        {"id":"simpleant:ants/worker/search/get_block/high_value/farmersdelight_apple_pie","required": false},
+        {"id":"simpleant:ants/worker/search/get_block/high_value/farmersdelight_chocolate_pie","required": false},
+        {"id":"simpleant:ants/worker/search/get_block/high_value/farmersdelight_sweet_berry_cheesecake","required": false}
     ]
 }

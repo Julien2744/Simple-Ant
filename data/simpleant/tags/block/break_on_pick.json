@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:frogspawn",
-    "minecraft:dried_ghast"
+    "minecraft:dried_ghast",
+    {"id": "farmersdelight:stuffed_pumpkin_block", "required": false}
   ]
 }

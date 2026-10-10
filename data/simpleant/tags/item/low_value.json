@@ -5,6 +5,24 @@
         "minecraft:leaf_litter",
         "minecraft:leather",
         "minecraft:rabbit_hide",
-        "minecraft:spider_eye"
+        "minecraft:spider_eye",
+        {"id":"farmersdelight:tomato","required":false},
+        {"id":"farmersdelight:onion","required":false},
+        {"id":"farmersdelight:rice","required":false},
+        {"id":"farmersdelight:fried_egg","required":false},
+        {"id":"farmersdelight:wheat_dough","required":false},
+        {"id":"farmersdelight:raw_pasta","required":false},
+        {"id":"farmersdelight:chicken_cuts","required":false},
+        {"id":"farmersdelight:cabbage_leaf","required":false},
+        {"id":"farmersdelight:cooked_chicken_cuts","required":false},
+        {"id":"farmersdelight:bacon","required":false},
+        {"id":"farmersdelight:cooked_bacon","required":false},
+        {"id":"farmersdelight:cod_slice","required":false},
+        {"id":"farmersdelight:cooked_cod_slice","required":false},
+        {"id":"farmersdelight:salmon_slice","required":false},
+        {"id":"farmersdelight:cooked_salmon_slice","required":false},
+        {"id":"farmersdelight:mutton_chops","required":false},
+        {"id":"farmersdelight:cooked_mutton_chops","required":false},
+        {"id":"farmersdelight:pie_crust","required":false}
     ]
 }

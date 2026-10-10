@@ -23,6 +23,26 @@
         "minecraft:cooked_cod",
         "minecraft:salmon",
         "minecraft:cooked_salmon",
-        "minecraft:tropical_fish"
+        "minecraft:tropical_fish",
+        {"id":"farmersdelight:pumpkin_slice","required":false},
+        {"id":"farmersdelight:ham","required":false},
+        {"id":"farmersdelight:smoked_ham","required":false},
+        {"id":"farmersdelight:apple_pie_slice","required":false},
+        {"id":"farmersdelight:cake_slice","required":false},
+        {"id":"farmersdelight:sweet_berry_cheesecake_slice","required":false},
+        {"id":"farmersdelight:chocolate_pie_slice","required":false},
+        {"id":"farmersdelight:pumpkin_pie_slice","required":false},
+        {"id":"farmersdelight:sweet_berry_cookie","required":false},
+        {"id":"farmersdelight:melon_popsicle","required":false},
+        {"id":"farmersdelight:cod_roll","required":false},
+        {"id":"farmersdelight:salmon_roll","required":false},
+        {"id":"farmersdelight:kelp_roll","required":false},
+        {"id":"farmersdelight:kelp_roll_slice","required":false},
+        {"id":"farmersdelight:cabbage_rolls","required":false},
+        {"id":"farmersdelight:cabbage","required":false},
+        {"id":"farmersdelight:dumplings","required":false},
+        {"id":"farmersdelight:stuffed_potato","required":false},
+        {"id":"farmersdelight:minced_beef","required":false},
+        {"id":"farmersdelight:beef_patty","required":false}
     ]
 }

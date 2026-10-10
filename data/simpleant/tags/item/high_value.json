@@ -8,6 +8,17 @@
         "minecraft:cake",
         "minecraft:sugar",
         "minecraft:rabbit_foot",
-        "minecraft:pumpkin_pie"
+        "minecraft:pumpkin_pie",
+        {"id":"farmersdelight:egg_sandwich","required":false},
+        {"id":"farmersdelight:chicken_sandwich","required":false},
+        {"id":"farmersdelight:hamburger","required":false},
+        {"id":"farmersdelight:bacon_sandwich","required":false},
+        {"id":"farmersdelight:mutton_wrap","required":false},
+        {"id":"farmersdelight:stuffed_pumpkin_block","required":false},
+        {"id":"farmersdelight:barbecue_stick","required":false},
+        {"id":"farmersdelight:apple_pie","required":false},
+        {"id":"farmersdelight:sweet_berry_cheesecake","required":false},
+        {"id":"farmersdelight:chocolate_pie","required":false},
+        {"id":"farmersdelight:honey_cookie","required":false}
     ]
 }

@@ -4,6 +4,10 @@
     "minecraft:dried_ghast",
     "minecraft:honey_block",
     "minecraft:honeycomb_block",
-    "minecraft:cake"
+    "minecraft:cake",
+    {"id":"farmersdelight:apple_pie", "required":false},
+    {"id":"farmersdelight:sweet_berry_cheesecake", "required":false},
+    {"id":"farmersdelight:chocolate_pie", "required":false},
+    {"id":"farmersdelight:stuffed_pumpkin_block", "required":false}
   ]
 }
