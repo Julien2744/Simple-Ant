@@ -1,6 +1,6 @@
 ## ------ Simple ants Datapack ------ ##
 # Minecraft version: 1.21.11 - 26.3
-# datapack version: beta-1.3
+# datapack version: beta-1.4
 # resourcepack version: v1.1
 # 
 # scoreboard version: 1
