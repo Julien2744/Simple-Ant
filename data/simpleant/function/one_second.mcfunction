@@ -20,5 +20,8 @@ execute if score #simpleant.config simpleant.config.stop_marker_tick matches 0 r
     execute at @r if entity @n[type=marker,tag=simpleant.ant_mound_marker,distance=..32] run \
         execute as @n[type=marker,tag=simpleant.ant_mound_marker,distance=..32] at @s run function simpleant:structures/summon_colony
 
+# fix remove leftover target tags
+execute at @r if entity @e[tag=simpleant.target,distance=..16,limit=32] run tag @e[tag=simpleant.target,distance=..16,limit=32] remove simpleant.target
+
 # keep at end
 schedule function simpleant:one_second 1s
