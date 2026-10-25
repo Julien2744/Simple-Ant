@@ -38,7 +38,7 @@ $data merge entity @n[type=item_display,tag=simpleant.ant_queen_model,tag=simple
 $data modify entity @n[type=spider,tag=simpleant.ant_queen_hitbox,tag=simpleant.newborn,distance=..1] data.ant_colony_id set value $(ant_colony_id)
 
 # random chance to be enchanted
-execute if predicate simpleant:random/1_2048 as @n[type=item_display,tag=simpleant.ant_queen_model,tag=simpleant.newborn,distance=..1] at @s \
+execute if predicate simpleant:random/1_512 as @n[type=item_display,tag=simpleant.ant_queen_model,tag=simpleant.newborn,distance=..1] at @s \
     run function simpleant:ants/enchant
 
 execute as @n[type=item_display,tag=simpleant.ant_queen_model,tag=simpleant.newborn,distance=..1] at @s run function simpleant:ants/queen/set_scoreboard
