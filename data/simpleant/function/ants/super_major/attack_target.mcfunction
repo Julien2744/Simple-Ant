@@ -1,9 +1,13 @@
 scoreboard players set @s simpleant.attack_cooldown 20
 
-# ant wandered too far
+# if target was queen, ant wandered too far
 $execute on target if entity @s[type=spider,tag=simpleant.ant_queen_hitbox,nbt={data:{ant_colony_id:$(ant_colony_id)}}] \
     as @n[type=spider,tag=simpleant.super_major_hitbox,distance=..1,nbt={data:{ant_colony_id:$(ant_colony_id)}}] \
         run return run function simpleant:ants/super_major/got_to_queen
+
+# if target was not queen but still have queen_baited attack damage supression
+execute if entity @s[nbt={attributes:[{id:"minecraft:attack_damage","modifiers":[{id:"simpleant:queen_baited"}]}]}] \
+    run attribute @s minecraft:attack_damage modifier remove simpleant:queen_baited
 
 execute store result entity @s data.attack_damage float 1 run attribute @s attack_damage get
 
