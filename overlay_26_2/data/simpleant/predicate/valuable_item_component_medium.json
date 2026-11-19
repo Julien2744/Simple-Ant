@@ -1,10 +1,10 @@
 {
-  "type": "minecraft:entity_properties",
+  "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
     "minecraft:slots": {
       "contents": {
-        "items": "#simpleant:has_component_interesting"
+        "items": "#simpleant:component_interesting_medium"
       }
     },
     "minecraft:flags": {

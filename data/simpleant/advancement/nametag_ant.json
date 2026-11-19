@@ -7,13 +7,17 @@
           "items": "minecraft:name_tag"
         },
         "entity": {
-          "minecraft:entity_type": "minecraft:spider",
-          "minecraft:entity_tags": {
-            "any_of": [
-              "simpleant.ant",
-              "simpleant.super_major",
-              "simpleant.ant_queen"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:spider",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "simpleant.ant",
+                "simpleant.super_major",
+                "simpleant.ant_queen"
+              ]
+            }
           }
         }
       }
