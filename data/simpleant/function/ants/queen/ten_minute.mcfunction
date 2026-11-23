@@ -23,7 +23,7 @@ execute if score @s simpleant.queen.super_major_count < #simpleant.config simple
 execute if entity @s[tag=!simpleant.queen_choose.major] \
     if score @s simpleant.queen.worker_count < #simpleant.config simpleant.config.max_worker \
     if score @s simpleant.queen.nutrition >= #simpleant.config simpleant.config.worker_cost \
-    on vehicle run function simpleant:ants/queen/summon_worker with entity @s data
+        on vehicle run function simpleant:ants/queen/summon_worker with entity @s data
 
 # summon super_major
 execute if entity @s[tag=simpleant.queen_choose.major] if score @s simpleant.queen.nutrition >= #simpleant.config simpleant.config.super_major_cost \
@@ -34,8 +34,19 @@ execute if score @s simpleant.queen.worker_count >= #simpleant.config simpleant.
     if score @s simpleant.queen.super_major_count >= #simpleant.config simpleant.config.max_super_major \
         on vehicle run function simpleant:ants/queen/buff_colony with entity @s data
 
+# check if max nutriton
+# we doesn't check if queen has the tag (simpleant.full_filled) here in case there is new a ant that appear
+execute if score @s simpleant.queen.nutrition >= #simpleant.config simpleant.config.max_nutrition \
+        on vehicle run function simpleant:ants/queen/stop_worker_search with entity @s data
+execute if entity @s[tag=simpleant.full_filled] \
+    if score @s simpleant.queen.nutrition < #simpleant.config simpleant.config.max_nutrition \
+       on vehicle run function simpleant:ants/queen/start_worker_search with entity @s data
+
 # check if queen is stuck because of terrible spider pathfinding
 execute on vehicle unless block ~ ~1 ~ #air run function simpleant:ants/queen/check_if_stuck with entity @s data
+
+# if queen ant can die of starvation
+execute if score #simpleant.config simpleant.config.can_starve matches 0 run return 0
 
 # starve if no nutrition
 execute if score @s simpleant.queen.nutrition matches ..0 on vehicle run damage @s 1 minecraft:starve

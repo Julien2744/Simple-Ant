@@ -3,7 +3,7 @@
 # datapack version: release 1.1
 # resourcepack version: v1.1
 # 
-# scoreboard version: 1
+# scoreboard version: 2
 ##
 
 scoreboard objectives add simpleant.load_scoreboard dummy
@@ -12,7 +12,7 @@ scoreboard objectives add simpleant.load_scoreboard dummy
 scoreboard objectives add simpleant.scoreboard_version dummy
 
 execute if score #simpleant.global simpleant.load_scoreboard matches 1 \
-    run execute unless score #simpleant.global simpleant.scoreboard_version matches 1 \
+    run execute unless score #simpleant.global simpleant.scoreboard_version matches 2 \
         run function simpleant:initialisation/init_scoreboards
 
 execute unless score #simpleant.global simpleant.load_scoreboard matches 1 run function simpleant:initialisation/init_scoreboards

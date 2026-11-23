@@ -1,2 +1,2 @@
-$effect give @e[type=spider,nbt={data:{ant_colony_id:$(ant_colony_id)}},distance=..127] minecraft:regeneration infinite 0 false
-$effect give @e[type=spider,nbt={data:{ant_colony_id:$(ant_colony_id)}},distance=..127] minecraft:speed infinite 0 false
+$effect give @e[type=spider,nbt={data:{ant_colony_id:$(ant_colony_id)}},distance=..127,limit=412] minecraft:regeneration infinite 0 false
+$effect give @e[type=spider,nbt={data:{ant_colony_id:$(ant_colony_id)}},distance=..127,limit=412] minecraft:speed infinite 0 false

@@ -20,6 +20,7 @@ execute if entity @s[tag=!simpleant.has_bait,tag=!simpleant.has_item] \
     # if search count != config
 execute unless score #simpleant.config simpleant.config.worker_stop_search matches 1 \
     unless entity @s[tag=simpleant.has_item] unless predicate simpleant:has_vehicle_target \
+    unless entity @s[tag=simpleant.full_filled] \
     if score @s simpleant.worker.search_cooldown >= #simpleant.config simpleant.config.worker_search_cooldown \
     unless score @s simpleant.worker.search_count = #simpleant.config simpleant.config.worker_search_count \
         run function simpleant:ants/worker/search/main_search

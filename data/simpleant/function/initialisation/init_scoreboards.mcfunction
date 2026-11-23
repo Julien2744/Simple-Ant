@@ -15,6 +15,11 @@ scoreboard objectives add simpleant.config.worker_search_cooldown dummy
 scoreboard objectives add simpleant.config.worker_search_count dummy
 # bool
 scoreboard objectives add simpleant.config.worker_stop_search dummy
+scoreboard objectives add simpleant.config.max_nutrition dummy
+# bool
+scoreboard objectives add simpleant.config.can_starve dummy
+# bool
+scoreboard objectives add simpleant.config.check_danger dummy
 
 ## --- ants --- ##
 # - global
@@ -44,9 +49,12 @@ scoreboard players set #simpleant.config simpleant.config.super_major_cost 5
 scoreboard players set #simpleant.config simpleant.config.worker_search_cooldown 150
 scoreboard players set #simpleant.config simpleant.config.worker_search_count 6
 scoreboard players set #simpleant.config simpleant.config.worker_stop_search 0
+scoreboard players set #simpleant.config simpleant.config.max_nutrition 255
+scoreboard players set #simpleant.config simpleant.config.can_starve 1
+scoreboard players set #simpleant.config simpleant.config.check_danger 1
 
 ## --- scoreboard version --- ##
-scoreboard players set #simpleant.global simpleant.scoreboard_version 1
+scoreboard players set #simpleant.global simpleant.scoreboard_version 2
 
 # schedules
 execute unless score #simpleant.global simpleant.load_scoreboard matches 1 run schedule function simpleant:four_tick 4t
