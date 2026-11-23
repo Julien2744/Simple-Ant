@@ -32,11 +32,11 @@ execute if entity @s[tag=simpleant.far_from_home] run tag @s remove simpleant.fa
 
 # re-enable the ant to target (got_to_queen.mcfunction)
 execute unless entity @s[tag=simpleant.queen_baited] on vehicle if entity @s[tag=simpleant.cant_target] unless predicate simpleant:has_target \
-    run function simpleant:ants/worker/remove_inability_to_target
+    run return run function simpleant:ants/worker/remove_inability_to_target
 
 # bait ant to the queen
 execute if entity @s[tag=simpleant.has_item,tag=!simpleant.has_bait,tag=!simpleant.queen_baited] \
-    on vehicle unless predicate simpleant:has_target run function simpleant:ants/worker/bait_to_queen with entity @s data
+    on vehicle unless predicate simpleant:has_target run return run function simpleant:ants/worker/bait_to_queen with entity @s data
 
 # if the ant is near the queen but can't get to it because of spider terrible pathfinding
 execute on vehicle at @s positioned ~ ~-1 ~ if predicate simpleant:has_target_queen run function simpleant:ants/worker/tp_check_queen_near with entity @s data

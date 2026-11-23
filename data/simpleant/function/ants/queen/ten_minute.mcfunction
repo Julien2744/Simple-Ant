@@ -1,5 +1,8 @@
 #say 10min
 
+# check in a 116 horizontal distance is a player is near (prevent ant from starving to death because of lazy chunk)
+execute at @p[distance=..512] unless predicate simpleant:player_near run return 0
+
 # re-calculate colony
 execute on vehicle run function simpleant:ants/queen/count_colony with entity @s data
 

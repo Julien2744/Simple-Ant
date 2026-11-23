@@ -3,6 +3,9 @@ data modify entity @s Rotation[0] set from entity @n[type=spider,tag=simpleant.a
 # execute on the inventory item display
 execute on passengers run data modify entity @s Rotation[0] set from entity @n[type=spider,tag=simpleant.ant_hitbox,distance=..1] Rotation[0]
 
+# check in a 116 horizontal distance is a player is near
+execute at @p[distance=..512] unless predicate simpleant:player_near run return 0
+
 # search cooldown
 execute if entity @s[tag=!simpleant.has_bait,tag=!simpleant.has_item] \
     unless score @s simpleant.worker.search_cooldown >= #simpleant.config simpleant.config.worker_search_cooldown \

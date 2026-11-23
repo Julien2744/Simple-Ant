@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:distance": {
+      "horizontal": {
+        "min": 0,
+        "max": 116
+      }
+    }
+  }
+}
