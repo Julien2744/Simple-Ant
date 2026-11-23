@@ -1,3 +1,6 @@
+# check death
+execute unless predicate simpleant:check_super_major_hitbox run function simpleant:ants/super_major/death
+
 # set ant rotation
 data modify entity @s Rotation[0] set from entity @n[type=spider,tag=simpleant.super_major_hitbox,distance=..1] Rotation[0]
 
@@ -10,7 +13,3 @@ execute on vehicle if entity @s[tag=simpleant.cant_target] unless predicate simp
 execute on vehicle if predicate simpleant:super_major_has_target_near \
     unless entity @s[nbt={attributes:[{id:"minecraft:follow_range","modifiers":[{id:"simpleant:passify"}]}]}] \
     if score @s simpleant.attack_cooldown matches 0 run function simpleant:ants/super_major/attack_target with entity @s data
-
-# keep at end
-# check death
-execute unless predicate simpleant:check_super_major_hitbox run function simpleant:ants/super_major/death

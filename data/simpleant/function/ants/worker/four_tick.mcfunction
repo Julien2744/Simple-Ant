@@ -1,3 +1,6 @@
+# check death
+execute unless predicate simpleant:check_woker_hitbox run return run function simpleant:ants/worker/death
+
 # set ant rotation
 data modify entity @s Rotation[0] set from entity @n[type=spider,tag=simpleant.ant_hitbox,distance=..1] Rotation[0]
 # execute on the inventory item display
@@ -30,7 +33,3 @@ execute if entity @s[tag=simpleant.has_bait] on vehicle if predicate simpleant:h
 execute on vehicle if predicate simpleant:has_target_near \
     unless entity @s[nbt={attributes:[{id:"minecraft:follow_range","modifiers":[{id:"simpleant:passify"}]}]}] \
     if score @s simpleant.attack_cooldown matches 0 run function simpleant:ants/worker/attack_target
-
-# keep at end
-# check death
-execute unless predicate simpleant:check_woker_hitbox run function simpleant:ants/worker/death

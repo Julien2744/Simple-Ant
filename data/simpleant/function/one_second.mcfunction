@@ -1,19 +1,15 @@
 ## ants
 # workers
-execute if entity @e[type=item_display,tag=simpleant.ant_model,limit=1] run \
-    execute as @e[type=item_display,tag=simpleant.ant_model,limit=200] at @s run function simpleant:ants/worker/one_second
+execute as @e[type=item_display,tag=simpleant.ant_model,limit=200] at @s run function simpleant:ants/worker/one_second
 
 # super majors
-execute if entity @e[type=item_display,tag=simpleant.super_major_model,limit=1] run \
-    execute as @e[type=item_display,tag=simpleant.super_major_model,limit=150] at @s run function simpleant:ants/super_major/one_second
+execute as @e[type=item_display,tag=simpleant.super_major_model,limit=150] at @s run function simpleant:ants/super_major/one_second
 
 # queen
-execute if entity @e[type=item_display,tag=simpleant.ant_queen_model,limit=1] run \
-    execute as @e[type=item_display,tag=simpleant.ant_queen_model,limit=100] at @s run function simpleant:ants/queen/one_second
+execute as @e[type=item_display,tag=simpleant.ant_queen_model,limit=100] at @s run function simpleant:ants/queen/one_second
 
 # baits
-execute if entity @e[type=bat,tag=simpleant.bait,limit=1] \
-    run execute as @e[type=bat,tag=simpleant.bait,limit=100] at @s run function simpleant:ants/bait_one_second
+execute as @e[type=bat,tag=simpleant.bait,limit=100] at @s run function simpleant:ants/bait_one_second
 
 # structure marker
 execute if score #simpleant.config simpleant.config.stop_marker_tick matches 0 run \
