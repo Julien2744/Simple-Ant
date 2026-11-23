@@ -3,7 +3,7 @@ summon spider ~ ~ ~ { \
     PersistenceRequired:1b, \
     Silent:1b, \
     Health:5f, \
-    DeathLootTable:"simpleant:empty", \
+    DeathLootTable:"simpleant:worker", \
     Tags:["simpleant.entity","simpleant.ant","simpleant.ant_hitbox","simpleant.newborn"], \
     CustomName:"Ant", \
     data:{ \

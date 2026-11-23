@@ -3,7 +3,7 @@ summon spider ~ ~ ~ { \
     PersistenceRequired:1b, \
     Silent:1b, \
     Health:15f, \
-    DeathLootTable:"simpleant:empty", \
+    DeathLootTable:"simpleant:super_major", \
     Tags:["simpleant.entity","simpleant.super_major","simpleant.super_major_hitbox","simpleant.newborn"], \
     CustomName:"Super Major", \
     data:{\
